@@ -12,10 +12,10 @@ from diabetes_system import (
 
 # ---------- Test hash_password ----------
 def test_hash_password_same():
-    assert hash_password("mypassword") == hash_password("mypassword")
+    assert hash_password("abc123") == hash_password("abc123")
 
 def test_hash_password_different():
-    assert hash_password("mypassword") != hash_password("otherpassword")
+    assert hash_password("abc123") != hash_password("123")
 
 # ---------- Test add_glucose ----------
 @patch("builtins.input", side_effect=["150"])
