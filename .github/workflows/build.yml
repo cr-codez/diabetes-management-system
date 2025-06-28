@@ -9,7 +9,8 @@ on:
 jobs:
   build:
     name: Test and SonarCloud Scan
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest  # ✅ MUST BE LINUX
+
     steps:
       - uses: actions/checkout@v4
         with:
@@ -33,4 +34,3 @@ jobs:
         uses: SonarSource/sonarcloud-github-action@v2
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-
