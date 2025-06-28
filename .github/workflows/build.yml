@@ -9,8 +9,7 @@ on:
 jobs:
   build:
     name: Test and SonarCloud Scan
-    runs-on: windows-latest
-
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
         with:
