@@ -2,7 +2,7 @@ import os
 import hashlib
 from datetime import datetime
 from unittest.mock import patch, mock_open
-from your_code_file import (  # change this to your actual Python file
+from diabetes_system import ( 
     hash_password,
     add_glucose,
     calculate_insulin,
